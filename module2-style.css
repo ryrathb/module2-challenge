@@ -1,0 +1,104 @@
+:root {
+    --dark: #6b5e07;
+    --light: #eee;
+    --navlink-color: #b9c6ae;
+    --standard-space: 2%;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.3;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1%;
+    background-color: var(--dark);
+    color: var(--light);
+  }
+  
+  h1 {
+    font-size: 200%;
+  }
+  
+  h2 {
+    margin: var(--standard-space) 0;
+    font-size: 250%;
+  }
+  h3 {
+    margin: var(--standard-space) 0;
+    font-size: 200%;
+  }
+  
+  a[href*='.css']::after {
+    content: '📝';
+    display: inline-block;
+    margin-left: 3px;
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: space-between;
+    min-width: 300px;
+  }
+  
+  nav a {
+    background-color: unset;
+    color: var(--navlink-color);
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  nav a:hover {
+    color: var(--light);
+  }
+  
+  main {
+    display: flex;
+    flex: 1 1 0;
+    max-width: 96%;
+    margin: var(--standard-space) auto;
+  }
+  
+  article {
+    border-bottom: 1px solid var(--dark);
+  }
+  
+  article p {
+    margin: var(--standard-space) 0;
+    font-size: 110%;
+  }
+  article div div {
+    font-size: 20px;
+  }
+  article div div img {
+    height: 200px;
+    width: 200px;
+  }
+  
+  footer  {
+    display: flex;
+    justify-content:center;
+    padding: var(--standard-space);
+    background-color: var(--dark);
+    color: var(--light);
+    margin-right: 150px;
+    margin-left:75px;
+  }
+  footer soan {
+    margin-right: 150px;
+    margin-left:75px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    header {
+      flex-direction: column;
+    }
+
+    main {
+      max-width: 1200px;
+    }
+}
